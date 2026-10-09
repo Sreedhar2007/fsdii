@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>complete css demonstration</title>
+<style>
+/*element selector*/
+p{
+	color:darkblue;
+	}
+/*id selector*/
+#unique{
+	background-color:lightyellow;
+	padding:10px;
+	}
+	/*class selector*/
+	.highlight{
+		color:green;
+		font-weight:bold;
+		}
+		/*group selector*/
+		h1,h2,h3{
+			text-align:center;
+			color:maroon;}
+			/*universal selector*/
+			*{
+				font-family=arial,sans-serif;
+				}
+				/*combinator selector*/
+				/*descendant selector*/
+				div p{
+					background-colo:#f0f8ff;
+					}
+					/*child selector*/
+					ul>li{
+						color:purple;
+						}
+						/*adjacent sibling selector*/
+						h3+p{
+							color:red;
+							}
+							/*general sibling selector*/
+							h4~p{
+								color:red;
+								font-style:italic;
+								
+								}
+								/*pseudo class selector*/
+								a:hover{
+									color:red;
+									text-decoration:underline;
+									}
+									/*pseudo element selector*/
+									p::first-letter{
+										font-size:30px;
+										color:brown;
+										}
+										/*attribute selector*/
+										input[tpe="text"]{
+											border:2px solidblue;
+											padding:5px;
+											}
+											/*css color references*/
+											.color-name{
+												color:red;
+												}
+												.hex-color:{
+													color:#1e90ff;
+													}
+													.rgb-color{
+														color:rgb(34,139,34);
+														}
+														.rgba-color{
+															color:rgba(255,0,0,0.6);
+															}
+															.hsl-color{
+																color:hsl(300,100%,40%);
+																}
+																/*background image*/
+																body{
+																	background-image:url("https://via.placeholder.com/300");
+																	background-repeat:no-repeat;
+																	background-position:center 50%;
+																	background-attachment:fixed;
+																}
+																/*font and text properties*/
+																.text-demo{
+																	font-size:18px;
+																	font-weight:bold;
+																	font-style:italic;
+																	text-decoration:none;
+																	text-transform:uppercase;
+																	tex-align:center;
+																	color:darkgreen;
+																}
+																/*css box model*/
+																.box-model{
+																	width:300px;
+																	background-color:lightblue;
+																	padding:20px;
+																	border:5px;
+																	margin:5px;
+																	text-align:center;
+																}
+																</style>
+																</head>
+																<body>
+																<h1>css complete demonstration</h1>
+																<h2>simple selector</h2>
+																<p>this is an element selector example</p>
+																<p id="unique">this uses id selector</p>
+																<p class="highlight">this uses class selector</p>
+																<h2>combinator selector</h2>
+																
+																<p>descendant selector example</p>
+																
+																<ul>
+																<li>child selector item</li>
+																<li>another item</li>
+																</ul>
+																<p>adjacent siblng selector</p>
+																<p>this paragraph is styled using adjacent selector</p>
+																<h4>general sibling selector</h4>
+																<p>general sibling paragraph 1</p>
+																<h2>pseudo class selector</h2>
+																<a href="#">hover over this link</a>
+																<br><br>
+																<h2>attribute selector</h2>
+																<input type="text"placeholder="attribute selector">
+																<h2>css color references</h2>
+																<p class="color-name">     color name</p>
+																<p class="hex-color">hex color</p>
+																<p class="rgb-color">rgb color</p>
+																<p class="rgba-color">rgba color</p>
+																<p class="hsl-color">hsl color</p>
+																<h2>font and text properties</h2>
+																<p class="text-demo">font size,weight,style,decoration,transformation and alignment</p>
+																</div>
+																</body>
+																</html>
